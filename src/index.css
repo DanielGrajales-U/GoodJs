@@ -1,0 +1,30 @@
+:root {
+  font-family: Quicksand;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #3e4247;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face{
+  font-family: 'Sans-serif';
+  src: url('../public/font/SFNS.ttf');
+}
+
+@font-face{
+  font-family: 'Sans-serif-bold';
+  src: url('../public/font/SFNSBold.ttf');
+}
+
+@font-face{
+  font-family: 'Quicksand';
+  src: url('../public/font/Quicksand.ttf');
+}
+
