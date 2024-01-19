@@ -1,11 +1,6 @@
 import styled from "styled-components";
 import { Link as RouterLink } from "react-router-dom";
 //CleanCode Styles
-export const CleanCodeContent = styled.div`
-    max-width: 1400px;
-    margin: auto;
-`;
-
 export const HeaderCleanCode = styled.header`
     background-color: #1d1f21;
     border-radius: 10px;
@@ -16,7 +11,6 @@ export const DescriptionHeader = styled.p`
     font-size: 18px;
     color: #e0e0e0
 `
-
 
 
 export const Ul = styled.ul`

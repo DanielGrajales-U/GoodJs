@@ -1,16 +1,17 @@
-import {CardContent, DescriptionCard, ImgCard, TitleCard, Link, LinkContent } from "./Styles";
+import {CardContent, DescriptionCard, TitleCard, Link, LinkContent } from "./Styles";
 
 interface Props {
   img: string;
   title: string;
   description: string;
   link: string;
+  className: string
 }
 
-export default function Cards({ img, title, description, link }: Props) {
+export default function Card({ img, title, description, link, className }: Props) {
   return (
     <CardContent>
-      <ImgCard src={img} />
+      <img className={className} src={img} />
       <div>
         <TitleCard>{title}</TitleCard>
         <DescriptionCard>{description}</DescriptionCard>

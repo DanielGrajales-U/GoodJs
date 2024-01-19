@@ -28,3 +28,17 @@
   src: url('../public/font/Quicksand.ttf');
 }
 
+/*Cards*/
+.card-clean-code{
+    width: 80px;
+    background-color: #2ea082;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.card-apps{
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+

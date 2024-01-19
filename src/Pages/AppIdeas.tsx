@@ -1,5 +1,9 @@
+import AppIdeasComponent from "../Components/AppIdeas/AppIdeasComponent";
+
 export default function AppIdeas() {
   return (
-    <div>AppIdeas</div>
+    <>
+      <AppIdeasComponent/>
+    </>
   )
 }

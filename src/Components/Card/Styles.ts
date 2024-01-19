@@ -17,13 +17,6 @@ export const CardContent = styled.article`
     }
 `;
 
-export const ImgCard = styled.img`
-    width: 80px;
-    background-color: #2ea082;
-    padding: 10px;
-    border-radius: 5px;
-`;
-
 export const TitleCard = styled.h2`
     color: #1d1f21;
     font-family: Sans-serif-bold;
