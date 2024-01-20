@@ -13,3 +13,14 @@ export const CleanCodeRoutes = {
     CLASS: 'clases',
     SOLID: 'solid',
 }
+
+export const AppsIdeasRoutes = {
+    MAIN: ''
+}
+
+export const AppBeginnerRoutes = {
+    BORDERRADIUS: 'borderradius',
+    CALCULATOR: 'calculator',
+    QUIZ: 'quiz',
+    POMODORO: 'pomodoro'
+}

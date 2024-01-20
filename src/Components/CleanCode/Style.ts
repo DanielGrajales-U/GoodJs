@@ -37,26 +37,6 @@ export const Link = styled(RouterLink)`
 `
 
 //ListPractices Styles
-export const PracticeHeading = styled.div`
-    display: flex;
-    align-items: center;
-`;
-
-export const TitleType = styled.h2`
-    font-family: Quicksand;
-    font-size: 40px;
-    color: #2ea082;
-    width: 800px;
-`;
-
-export const LinkToBack = styled(RouterLink)`
-    font-size: 40px;
-    text-decoration: none;
-    color: #fff;
-    margin-right: 10px;
-    font-weight: bolder;
-`;
-
 export const Subheading = styled.h3`
   font-size: 22px;
 `;

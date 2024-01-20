@@ -1,5 +1,8 @@
-const BorderPreviewDetails = {
+import borderPreview from '../../../../public/images/Apps/border-preview.png'
+
+const BorderPreviewData = {
     title: "Previsualizador de Bordes",
+    img: borderPreview,
     descriptionRequirement: "El 'Previsualizador de Bordes' es una aplicación interactiva desarrollada en JavaScript Vanilla. Esta herramienta permite a los usuarios explorar la propiedad border-radius, visualizando instantáneamente cómo afecta la forma de un cuadro al ajustar los valores de las esquinas. Desde formas básicas hasta diseños más complejos, esta aplicación brinda una experiencia intuitiva y creativa para los desarrolladores que desean perfeccionar sus habilidades en CSS.",
     requirements:[
         {
@@ -32,5 +35,22 @@ const BorderPreviewDetails = {
             id: "4",
             description: "Proyectos Personalizados: Incentiva a los desarrolladores a integrar esta herramienta en sus repositorios como parte de proyectos más amplios centrados en el diseño y la estilización en CSS."
         }
+    ],
+    examples: [
+        {
+            name: "Fancy Border Radius",
+            url: "https://9elements.github.io/fancy-border-radius/"
+        },
+        {
+            name: "Border Radius",
+            url: "https://border-radius.com/"
+        },
+        {
+            name: "Border Radius CSS Generator",
+            url: "https://cssgenerator.org/border-radius-css-generator.html"
+        },
+
     ]
 }
+
+export default BorderPreviewData

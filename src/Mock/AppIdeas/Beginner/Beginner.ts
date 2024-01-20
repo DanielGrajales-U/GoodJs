@@ -7,14 +7,14 @@ const Beginner = [
     {
         id: "1",
         img: borderRadius,
-        link: "previsualizadordebordes",
+        link: "borderradius",
         title: "Previsualizador de Bordes",
         description: "Este proyecto de JavaScript Vanilla se centra en la creación de un 'Previsualizador de Bordes'. La propiedad border-radius puede tener múltiples valores, y esta aplicación permitirá a los usuarios visualizar cómo cambia la forma de un cuadro al ajustar estos valores.",
     },
     {
         id: "2",
         img: calculator,
-        link: "calculadora",
+        link: "calculator",
         title: "Calculadora",
         description: "La 'Calculadora' es una aplicación que va más allá de ser una herramienta útil, también representa una excelente oportunidad para comprender la interfaz de usuario y el procesamiento de eventos en una aplicación. En este proyecto, crearás una calculadora que admita cálculos aritméticos básicos con números enteros.",
     },

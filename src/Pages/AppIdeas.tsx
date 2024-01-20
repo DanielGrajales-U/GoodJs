@@ -1,9 +1,9 @@
-import AppIdeasComponent from "../Components/AppIdeas/AppIdeasComponent";
+import { Outlet } from "react-router-dom";
 
 export default function AppIdeas() {
   return (
     <>
-      <AppIdeasComponent/>
+      <Outlet />
     </>
   )
 }

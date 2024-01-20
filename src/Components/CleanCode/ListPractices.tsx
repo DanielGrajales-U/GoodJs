@@ -1,6 +1,7 @@
 import { PublicRoutes } from '../../models';
 import CodeSnippet from '../CodeSnipets/CodeSnipets';
-import { BadPractice, GoodPractice, LinkToBack, PracticeDescription, PracticeHeading, Subheading, TitleType } from './Style';
+import { LinkToBack, SubPageHeading, TitlePage } from '../Styles';
+import { BadPractice, GoodPractice, PracticeDescription,  Subheading,  } from './Style';
 
 interface ListProps {
   id: string;
@@ -19,10 +20,10 @@ interface Props {
 export default function ListPractices({ type, list }: Props) {
   return (
     <>
-      <PracticeHeading>
+      <SubPageHeading>
         <LinkToBack to={`/${PublicRoutes.JSCLEANCODE}`}>←</LinkToBack>
-        <TitleType>{type}</TitleType>
-      </PracticeHeading>
+        <TitlePage>{type}</TitlePage>
+      </SubPageHeading>
       <hr/>
       {list.map((practice) => (
         <div key={practice.id}>
