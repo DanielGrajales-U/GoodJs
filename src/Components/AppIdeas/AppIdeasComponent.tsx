@@ -1,3 +1,4 @@
+import { LevelTitle } from ".";
 import AppIdeasData from "../../Mock/AppIdeas/AppIdeas";
 import { HeaderContent, StylesContent } from "../Styles";
 import ListAppComponent from "./ListAppComponent";
@@ -10,7 +11,7 @@ export default function AppIdeasComponent() {
         {
             AppIdeasData.levels.map(level => (
                 <div>
-                    <h2>{level.title}</h2>
+                    <LevelTitle>{level.title}</LevelTitle>
                     <hr />
                     <ListAppComponent list={level.proyects} />
                 </div>

@@ -1,4 +1,6 @@
 import Beginner from "./Beginner/Beginner";
+import Middle from "./Middle/Middle"
+import Advanced  from "./Advanced/Advanced";
 
 const AppIdeasData = {
     description:
@@ -10,11 +12,11 @@ const AppIdeasData = {
         },
         {
             title: 'Intermedio',
-            proyects: Beginner
+            proyects: Middle
         },
         {
             title: 'Avanzado',
-            proyects: Beginner
+            proyects: Advanced
         },
     ]
   };

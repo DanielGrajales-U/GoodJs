@@ -2,6 +2,11 @@ import styled from "styled-components";
 
 
 //list Apps
+export const LevelTitle = styled.h2`
+    font-size: 30px;
+    color: #2ea082;
+`;
+
 export const ListApps = styled.div`
     width: 100%;
     display: flex;
@@ -10,7 +15,6 @@ export const ListApps = styled.div`
 `;
 
 //Details Apps
-
 export const ImgDetailApp = styled.img`
     max-width: 600px;
     border-radius: 10px;

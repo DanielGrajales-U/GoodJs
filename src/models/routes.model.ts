@@ -24,3 +24,17 @@ export const AppBeginnerRoutes = {
     QUIZ: 'quiz',
     POMODORO: 'pomodoro'
 }
+
+export const AppMiddleRoutes = {
+    BOOKSEARCH: 'buscadordelibros',
+    MEMORYCARD: 'estaconesta',
+    TYPING: 'mecanografia',
+    CHROMEEXTENTION: 'extentiontheme'
+}
+
+export const AppAdvancedRoutes = {
+    MOVIEGALERY: 'galeriadepeliculas',
+    INSTAGRAMCLONE: 'clondeinstagram',
+    CHAT: 'chat',
+    VIDEOGAME: 'videojuego'
+}
