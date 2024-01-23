@@ -3,7 +3,7 @@ import extentiontheme from '../../../../public/images/Apps/extention-theme.png'
 const ExtentionThemeData = {
     title: "Extencion de tema para Chrome",
     img: extentiontheme,
-    descriptionRequirement: "La extensión Chrome Theme te permite construir tu propio tema personalizado para Chrome. Además, incorpora una función de luz nocturna (filtro de luz azul) que se activa automáticamente durante la noche, reduciendo la fatiga visual mientras programas hasta tarde o disfrutas de tus series favoritas.",
+    descriptionRequirement: "Crear esta extensión no solo te permite personalizar la apariencia de tu navegador, sino que también mejora tus habilidades de JavaScript. Aprendes a manipular el DOM, gestionar eventos y trabajar con la API de Chrome. Además, explorarás conceptos como almacenamiento local y la creación de interfaces de usuario interactivas.",
     requirements:[
         {
             id: "1",

@@ -30,4 +30,8 @@ export const LinkToBack = styled(RouterLink)`
     color: #fff;
     margin-right: 10px;
     font-weight: bolder;
+    transition: .2s all ease-in-out;
+    &:hover{
+        color: #2ea082
+    }
 `;

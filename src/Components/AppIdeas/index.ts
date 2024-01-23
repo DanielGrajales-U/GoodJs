@@ -1,3 +1,4 @@
+export * from './Advanced';
 export { default as AppIdeasComponent } from './AppIdeasComponent';
 export * from './Beginner';
 export { default as DetailsApps } from './DetailsApps';

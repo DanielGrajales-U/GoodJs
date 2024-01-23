@@ -1,13 +1,12 @@
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
-import { AppBeginnerRoutes, AppsIdeasRoutes, CleanCodeRoutes, PublicRoutes } from './models'
+import { AppAdvancedRoutes, AppBeginnerRoutes, AppMiddleRoutes, AppsIdeasRoutes, CleanCodeRoutes, PublicRoutes } from './models'
 import { Algorithms, AppIdeas, JsCleanCode, JsInterviews } from './Pages'
 import Header from './Components/Header/Header'
 import Home from './Pages/Home'
 import { FunctionComponent, ObjectComponent, ClassComponent, VariableComponent, SolidComponents } from './Components/CleanCode/ContentCleanCode'
 import AppIdeasComponent from './Components/AppIdeas/AppIdeasComponent'
-import { BorderDetails, CalculatorDetails, QuizDetails, PomodoroDetails } from './Components/AppIdeas'
+import { BorderDetails, CalculatorDetails, QuizDetails, PomodoroDetails, BookFinderDetails, MemoryCardDetails, TypingDetails, ExtentionThemeDetails, MovieGaleryDetails, InstagramCloneDetails, ChatDetails, VideoGameDetails } from './Components/AppIdeas'
 function App() {
-
   return (
     <>
       <BrowserRouter>
@@ -28,6 +27,16 @@ function App() {
             <Route path={AppBeginnerRoutes.CALCULATOR} element={<CalculatorDetails/>}/>
             <Route path={AppBeginnerRoutes.QUIZ} element={<QuizDetails/>}/>
             <Route path={AppBeginnerRoutes.POMODORO} element={<PomodoroDetails/>}/>
+
+            <Route path={AppMiddleRoutes.BOOKSEARCH} element={<BookFinderDetails/>}/>
+            <Route path={AppMiddleRoutes.MEMORYCARD} element={<MemoryCardDetails/>}/>
+            <Route path={AppMiddleRoutes.TYPING} element={<TypingDetails/>}/>
+            <Route path={AppMiddleRoutes.CHROMEEXTENTION} element={<ExtentionThemeDetails/>}/>
+
+            <Route path={AppAdvancedRoutes.MOVIEGALERY} element={<MovieGaleryDetails/>}/>
+            <Route path={AppAdvancedRoutes.INSTAGRAMCLONE} element={<InstagramCloneDetails/>}/>
+            <Route path={AppAdvancedRoutes.CHAT} element={<ChatDetails/>}/>
+            <Route path={AppAdvancedRoutes.VIDEOGAME} element={<VideoGameDetails/>}/>
           </Route>
           <Route path={PublicRoutes.JSINTERVIEWS} element={<JsInterviews/>}/>
           <Route path='*' element={<p>Not Found</p>}/>

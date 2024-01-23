@@ -1,8 +1,8 @@
-import memorycard from '../../../../public/images/Apps/memory-card.png'
+import moviegalery from '../../../../public/images/Apps/moviegalery.png'
 
 const MovieGaleryData = {
     title: "Galeria de peliculas",
-    img: memorycard,
+    img: moviegalery,
     descriptionRequirement: "La aplicación Movie Database es tu compañera perfecta para descubrir tu próxima película. Proporciona estadísticas útiles, reseñas, calificaciones y detalles sobre cada película, permitiendo a los usuarios tomar decisiones informadas sobre qué ver a continuación. La aplicación utiliza una API de películas, como Imdb o MovieDB, para obtener información precisa y actualizada.",
     requirements:[
         {

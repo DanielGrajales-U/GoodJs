@@ -1,8 +1,8 @@
-import memorycard from '../../../../public/images/Apps/memory-card.png'
+import chat from '../../../../public/images/Apps/chat.png'
 
 const ChatData = {
     title: "Practica de mecanografia",
-    img: memorycard,
+    img: chat,
     descriptionRequirement: "La aplicación de chat ofrece una interfaz en tiempo real donde los usuarios pueden interactuar mediante el intercambio de mensajes. Como Producto Mínimo Viable (MVP), el enfoque inicial se centra en construir la interfaz de chat, y las funciones en tiempo real se incorporarán en características adicionales.",
     requirements:[
         {

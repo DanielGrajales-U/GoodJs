@@ -1,8 +1,8 @@
-import memorycard from '../../../../public/images/Apps/memory-card.png'
+import typing from '../../../../public/images/Apps/typing practice.png'
 
 const TypingPracticeData = {
     title: "Practica de mecanografia",
-    img: memorycard,
+    img: typing,
     descriptionRequirement: "La aplicación Typing Practice está diseñada para mejorar la velocidad y precisión de escritura de los desarrolladores. Presenta una palabra que debes escribir dentro de un intervalo de tiempo específico. Si la palabra se escribe incorrectamente, permanece en pantalla y el intervalo de tiempo permanece igual. Pero, si la palabra se escribe correctamente, se muestra una nueva palabra y el intervalo de tiempo se reduce ligeramente.",
     requirements:[
         {

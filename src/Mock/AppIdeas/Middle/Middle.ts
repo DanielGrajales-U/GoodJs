@@ -30,7 +30,7 @@ const Middle = [
         img: extentiontheme,
         link: "extentiontheme",
         title: "Extencion de tema Chrome",
-        description: "Crea tu propia extensión de tema personalizado para Chrome. Además, agrega una función de luz nocturna para proteger los ojos durante la noche mientras programas o ves Netflix.",
+        description: "Diseña tu extensión personalizada para temas en Chrome y dale un toque único a tu experiencia de navegación. Además, incluye una función de luz nocturna para proteger tus ojos durante sesiones nocturnas de navegación o trabajo.",
     },
 ]
 

@@ -1,8 +1,8 @@
-import memorycard from '../../../../public/images/Apps/memory-card.png'
+import videogame from '../../../../public/images/Apps/game.png'
 
 const VideoGameData = {
-    title: "Galeria de peliculas",
-    img: memorycard,
+    title: "Video juego",
+    img: videogame,
     descriptionRequirement: "En este proyecto, pondrás a prueba tus habilidades de animación al crear un juego de carreras de insectos. Los usuarios pueden personalizar el juego eligiendo iconos de insectos, asignando nombres, seleccionando la velocidad y apostando por el posible ganador. La velocidad de cada insecto se ajusta aleatoriamente antes de la carrera, creando un desafío emocionante.",
     requirements:[
         {
