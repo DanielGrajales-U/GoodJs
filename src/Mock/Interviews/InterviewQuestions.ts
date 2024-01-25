@@ -1,16 +1,16 @@
-const interviewQuestions = [
+const interviewQuestionsData = [
   {
     id: 1,
     question: "¿Cuál es el resultado del siguiente código?",
     code: `
-      function sayHi() {
-        console.log(name);
-        console.log(age);
-        var name = 'Lydia';
-        let age = 21;
-      }
+function sayHi() {
+  console.log(name);
+  console.log(age);
+  var name = 'Lydia';
+    et age = 21;
+}
       
-      sayHi();
+sayHi();
     `,
     options: {
       A: 'Lydia e undefined',
@@ -34,13 +34,13 @@ const interviewQuestions = [
     id: 2,
     question: "¿Cuál es el resultado?",
     code: `
-      for (var i = 0; i < 3; i++) {
-        setTimeout(() => console.log(i), 1);
-      }
+for (var i = 0; i < 3; i++) {
+  setTimeout(() => console.log(i), 1);
+}
       
-      for (let i = 0; i < 3; i++) {
-        setTimeout(() => console.log(i), 1);
-      }
+for (let i = 0; i < 3; i++) {
+  setTimeout(() => console.log(i), 1);
+}
     `,
     options: {
       A: '0 1 2 y 0 1 2',
@@ -62,16 +62,16 @@ const interviewQuestions = [
     id: 3,
     question: "¿Cuál es el resultado?",
     code: `
-      const shape = {
-        radius: 10,
-        diameter() {
-          return this.radius * 2;
-        },
-        perimeter: () => 2 * Math.PI * this.radius,
-      };
+const shape = {
+  radius: 10,
+  diameter() {
+    return this.radius * 2;
+  },
+  perimeter: () => 2 * Math.PI * this.radius,
+};
       
-      console.log(shape.diameter());
-      console.log(shape.perimeter());
+console.log(shape.diameter());
+console.log(shape.perimeter());
     `,
     options: {
       A: '20 y 62.83185307179586',
@@ -93,8 +93,8 @@ const interviewQuestions = [
     id: 4,
     question: "¿Cuál es el resultado?",
     code: `
-      +true;
-      !'Lydia';
++true;
+!'Lydia';
     `,
     options: {
       A: '1 y false',
@@ -112,14 +112,14 @@ const interviewQuestions = [
     id: 5,
     question: '¿Cuál es verdadero?',
     code: `
-      const bird = {
-        size: 'small',
-      };
+const bird = {
+  size: 'small',
+};
       
-      const mouse = {
-        name: 'Mickey',
-        small: true,
-      };
+const mouse = {
+  name: 'Mickey',
+  small: true,
+};
     `,
     options: {
       A: 'mouse.bird.size no es válido',
@@ -149,12 +149,12 @@ const interviewQuestions = [
     id: 6,
     question: "¿Cuál es el resultado?",
     code: `
-      let c = { greeting: 'Hey!' };
-      let d;
+let c = { greeting: 'Hey!' };
+let d;
       
-      d = c;
-      c.greeting = 'Hello';
-      console.log(d.greeting);
+d = c;
+c.greeting = 'Hello';
+console.log(d.greeting);
     `,
     options: {
       A: 'Hello',
@@ -175,13 +175,13 @@ const interviewQuestions = [
     id: 7,
     question: "¿Cuál es el resultado?",
     code: `
-      let a = 3;
-      let b = new Number(3);
-      let c = 3;
+let a = 3;
+let b = new Number(3);
+let c = 3;
       
-      console.log(a == b);
-      console.log(a === b);
-      console.log(b === c);
+console.log(a == b);
+console.log(a === b);
+console.log(b === c);
     `,
     options: {
       A: 'true false true',
@@ -202,19 +202,19 @@ const interviewQuestions = [
     id: 8,
     question: "¿Cuál es el resultado?",
     code: `
-      class Camaleón {
-        static colorChange(newColor) {
-          this.newColor = newColor;
-          return this.newColor;
-        }
+class Camaleón {
+  static colorChange(newColor) {
+    this.newColor = newColor;
+    return this.newColor;
+  }
       
-        constructor({ newColor = 'verde' } = {}) {
-          this.newColor = newColor;
-        }
-      }
+  constructor({ newColor = 'verde' } = {}) {
+    this.newColor = newColor;
+  }
+}
       
-      const freddie = new Camaleón({ newColor: 'morado' });
-      console.log(freddie.colorChange('naranja'));
+const freddie = new Camaleón({ newColo'morado' });
+console.log(freddie.colorChange('naranja'));
     `,
     options: {
       A: 'naranja',
@@ -231,9 +231,9 @@ const interviewQuestions = [
     id: 9,
     question: "¿Cuál es el resultado?",
     code: `
-      let greeting;
-      greetign = {}; // ¡Error tipográfico!
-      console.log(greetign);
+let greeting;
+greetign = {}; // ¡Error tipográfico!
+console.log(greetign);
     `,
     options: {
       A: '{}',
@@ -256,11 +256,11 @@ const interviewQuestions = [
     id: 10,
     question: '¿Qué sucede cuando hacemos esto?',
     code: `
-      function bark() {
-        console.log('¡Guau!');
-      }
+function bark() {
+  console.log('¡Guau!');
+}
       
-      bark.animal = 'perro';
+bark.animal = 'perro';
     `,
     options: {
       A: 'Nada, esto está totalmente bien.',
@@ -279,15 +279,15 @@ const interviewQuestions = [
     id: 11,
     question: "¿Cuál es la salida?",
     code: `
-    function Person(firstName, lastName) {
-      this.firstName = firstName;
-      this.lastName = lastName;
-    }
+function Person(firstName, lastName) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+}
     
-    const member = new Person('Lydia', 'Hallie');
-    Person.getFullName = function() {
-      return \`\${this.firstName} \${this.lastName}\`;
-    };
+const member = new Person('Lydia', 'Hallie');
+Person.getFullName = function() {
+  return \`\${this.firstName} \${this.lastName}\`;
+};
     
     console.log(member.getFullName());
       `,
@@ -306,16 +306,16 @@ const interviewQuestions = [
     id: 12,
     question: "¿Cuál es la salida?",
     code: `
-    function Person(firstName, lastName) {
-      this.firstName = firstName;
-      this.lastName = lastName;
-    }
+function Person(firstName, lastName) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+}
     
-    const lydia = new Person('Lydia', 'Hallie');
-    const sarah = Person('Sarah', 'Smith');
+const lydia = new Person('Lydia', 'Hallie');
+const sarah = Person('Sarah', 'Smith');
     
-    console.log(lydia);
-    console.log(sarah);
+console.log(lydia);
+console.log(sarah);
       `,
     options: {
       A: "Person {firstName: 'Lydia', lastName: 'Hallie'} and undefined",
@@ -346,7 +346,7 @@ const interviewQuestions = [
 },
   {
     id: 14,
-    pregunta: "¿Todos los objetos tienen prototipos?",
+    question: "¿Todos los objetos tienen prototipos?",
     options: {
       A: "true",
       B: "false",
@@ -360,11 +360,11 @@ const interviewQuestions = [
     id: 15,
     question: "¿Cuál es el resultado del siguiente código?",
     code: `
-      function sum(a, b) {
-        return a + b;
-      }
+function sum(a, b) {
+  return a + b;
+}
   
-      sum(1, '2');
+sum(1, '2');
     `,
     options: {
       A: 'NaN',
@@ -387,10 +387,10 @@ const interviewQuestions = [
     id: 16,
     question: "¿Cuál es el resultado del siguiente código?",
     code: `
-      let number = 0;
-      console.log(number++);
-      console.log(++number);
-      console.log(number);
+let number = 0;
+console.log(number++);
+console.log(++number);
+console.log(number);
     `,
     options: {
       A: '1 1 2',
@@ -417,16 +417,16 @@ const interviewQuestions = [
     id: 17,
     question: "¿Cuál es el resultado del siguiente código?",
     code: `
-      function getPersonInfo(one, two, three) {
-        console.log(one);
-        console.log(two);
-        console.log(three);
-      }
+function getPersonInfo(one, two, three) {
+  console.log(one);
+  console.log(two);
+  console.log(three);
+}
       
-      const person = 'Lydia';
-      const age = 21;
+const person = 'Lydia';
+const age = 21;
       
-      getPersonInfo \${person} is \${age} years old;
+getPersonInfo \${person} is \${age} years old;
     `,
     options: {
       A: '"Lydia" 21 ["", " is ", " years old"]',
@@ -441,19 +441,19 @@ const interviewQuestions = [
   },
   {
     id: 18,
-    question: "What's the output?",
+    question: "¿Cuál es el resultado?",
     code: `
-    function checkAge(data) {
-      if (data === { age: 18 }) {
-        console.log('You are an adult!');
-      } else if (data == { age: 18 }) {
-        console.log('You are still an adult.');
-      } else {
-        console.log("Hmm.. You don't have an age I guess");
-      }
-    }
+function checkAge(data) {
+  if (data === { age: 18 }) {
+    console.log('You are an adult!');
+  } else if (data == { age: 18 }) {
+    console.log('You are still an adult.');
+  } else {
+    console.log("Hmm.. You don't have an age I guess");
+  }
+}
   
-    checkAge({ age: 18 });
+checkAge({ age: 18 });
     `,
     options: {
       A: 'You are an adult!',
@@ -471,13 +471,13 @@ const interviewQuestions = [
   },
   {
     id: 19,
-    question: "What's the output?",
+    question: "¿Cuál es el resultado?",
     code: `
-    function getAge(...args) {
-      console.log(typeof args);
-    }
+function getAge(...args) {
+  console.log(typeof args);
+}
   
-    getAge(21);
+getAge(21);
     `,
     options: {
       A: '"number"',
@@ -492,15 +492,15 @@ const interviewQuestions = [
   },
   {
     id: 20,
-    question: "What's the output?",
+    question: "¿Cuál es el resultado?",
     code: `
-  function getAge() {
-    'use strict';
-    age = 21;
-    console.log(age);
-  }
+function getAge() {
+  'use strict';
+  age = 21;
+  console.log(age);
+}
   
-  getAge();
+getAge();
     `,
     options: {
       A: '21',
@@ -515,9 +515,9 @@ const interviewQuestions = [
   },
   {
     id: 21,
-    question: "What's the value of sum?",
+    question: "¿Cuál es el resultado de sum?",
     code: `
-  const sum = eval('10*10+5');
+const sum = eval('10*10+5');
     `,
     options: {
       A: 105,
@@ -551,12 +551,12 @@ const interviewQuestions = [
   },
   {
     id: 23,
-    question: "What's the output?",
+    question: "¿Cuál es el resultado?",
     code: `
-  var num = 8;
-  var num = 10;
+var num = 8;
+var num = 10;
   
-  console.log(num);
+console.log(num);
     `,
     options: {
       A: 8,
@@ -573,15 +573,15 @@ const interviewQuestions = [
   },
   {
     id: 24,
-    question: "What's the output?",
+    question: "¿Cuál es el resultado?",
     code: `
-  const obj = { 1: 'a', 2: 'b', 3: 'c' };
-  const set = new Set([1, 2, 3, 4, 5]);
+const obj = { 1: 'a', 2: 'b', 3: 'c' };
+const set = new Set([1, 2, 3, 4, 5]);
   
-  obj.hasOwnProperty('1');
-  obj.hasOwnProperty(1);
-  set.has('1');
-  set.has(1);
+obj.hasOwnProperty('1');
+obj.hasOwnProperty(1);
+set.has('1');
+set.has(1);
     `,
     options: {
       A: 'false true false true',
@@ -598,10 +598,10 @@ const interviewQuestions = [
   },
   {
     id: 25,
-    question: "What's the output?",
+    question: "¿Cuál es el resultado?",
     code: `
-  const obj = { a: 'one', b: 'two', a: 'three' };
-  console.log(obj);
+const obj = { a: 'one', b: 'two', a: 'three' };
+console.log(obj);
     `,
     options: {
       A: '{ a: "one", b: "two" }',
@@ -616,7 +616,7 @@ const interviewQuestions = [
   },
   {
     id: 26,
-    question: "The JavaScript global execution context creates two things for you: the global object, and the 'this' keyword.",
+    question: "El contexto de ejecución global de JavaScript crea dos cosas para ti: el objeto global y la palabra clave 'this'.",
     options: {
       A: 'true',
       B: 'false',
@@ -629,12 +629,12 @@ const interviewQuestions = [
   },
   {
     id: 27,
-    question: "What's the output?",
+    question: "¿Cuál es el resultado?",
     code: `
-  for (let i = 1; i < 5; i++) {
-    if (i === 3) continue;
-    console.log(i);
-  }
+for (let i = 1; i < 5; i++) {
+  if (i === 3) continue;
+  console.log(i);
+}
     `,
     options: {
       A: '1 2',
@@ -649,15 +649,15 @@ const interviewQuestions = [
   },
   {
     id: 28,
-    question: "What's the output?",
+    question: "¿Cuál es el resultado?",
     code: `
-  String.prototype.giveLydiaPizza = () => {
-    return 'Just give Lydia pizza already!';
-  };
+String.prototype.giveLydiaPizza = () => {
+  return 'Just give Lydia pizza already!';
+};
   
-  const name = 'Lydia';
+const name = 'Lydia';
   
-  console.log(name.giveLydiaPizza())
+console.log(name.giveLydiaPizza())
     `,
     options: {
       A: 'Just give Lydia pizza already!',
@@ -672,16 +672,16 @@ const interviewQuestions = [
   },
   {
     id: 29,
-    question: "What's the output?",
+    question: "¿Cuál es el resultado?",
     code: `
-  const a = {};
-  const b = { key: 'b' };
-  const c = { key: 'c' };
+const a = {};
+const b = { key: 'b' };
+const c = { key: 'c' };
   
-  a[b] = 123;
-  a[c] = 456;
+a[b] = 123;
+a[c] = 456;
   
-  console.log(a[b]);
+console.log(a[b]);
     `,
     options: {
       A: 123,
@@ -700,15 +700,15 @@ const interviewQuestions = [
   },
   {
     id: 30,
-    question: "What's the output?",
+    question: "¿Cuál es el resultado?",
     code: `
-  const foo = () => console.log('First');
-  const bar = () => setTimeout(() => console.log('Second'));
-  const baz = () => console.log('Third');
+const foo = () => console.log('First');
+const bar = () => setTimeout(() => console.lo('Second'));
+const baz = () => console.log('Third');
   
-  bar();
-  foo();
-  baz();
+bar();
+foo();
+baz();
     `,
     options: {
       A: 'First Second Third',
@@ -727,4 +727,4 @@ const interviewQuestions = [
   }
 ];
 
-export default interviewQuestions;
+export default interviewQuestionsData;

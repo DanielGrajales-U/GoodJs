@@ -1,7 +1,9 @@
+import InterviewQuestion, {ListProps} from "../Components/InterviewQuestion/InterviewQuestion";
+import interviewQuestionsData from "../Mock/Interviews/InterviewQuestions";
 
 
 export default function JsInterviews() {
   return (
-    <div>JsInterviews</div>
+    <InterviewQuestion list={interviewQuestionsData as ListProps[]}/>
   )
 }
