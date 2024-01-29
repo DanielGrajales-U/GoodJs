@@ -13,6 +13,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+body{
+  margin: 0;
+  padding: 0;
+}
+
 @font-face{
   font-family: 'Sans-serif';
   src: url('../public/font/SFNS.ttf');

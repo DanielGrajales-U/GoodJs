@@ -1,15 +1,14 @@
-import { Head, LetterD, LetterG, LetterJs, LetterO, Li, Nav, Title, Ul, Link} from './Styles';
+import { Head, Li, Nav, Logo, Ul, Link, Spikes, ContentLogo} from './Styles';
 import { PublicRoutes } from '../../models';
+import logo from '../../../public/images/logo.png'
 
 export default function Header() {
   return (
+    <Spikes>
     <Head>
-      <Title>
-        <LetterG>G</LetterG>
-        <LetterO>oo</LetterO>
-        <LetterD>d</LetterD>
-        <LetterJs>Js</LetterJs>
-      </Title>
+      <ContentLogo>
+        <Logo src={logo} />
+      </ContentLogo>
       <Nav>
         <Ul>
           <Li>
@@ -19,7 +18,7 @@ export default function Header() {
             <Link to={PublicRoutes.JSCLEANCODE}>Codigo-Limpio</Link>
           </Li>
           <Li>
-            <Link to={PublicRoutes.ALGORITHMS}>Algoritmos</Link>
+            <Link to={PublicRoutes.DESIGNPATTERN}>Patrones de Diseño</Link>
           </Li>
           <Li>
             <Link to={PublicRoutes.APPIDEAS}>Apps</Link>
@@ -30,5 +29,6 @@ export default function Header() {
         </Ul>
       </Nav>
     </Head>
+    </Spikes>
   );
 }

@@ -1,20 +1,12 @@
+import { PracticeProps } from '../../Mock';
 import { PublicRoutes } from '../../models';
 import CodeSnippet from '../CodeSnipets/CodeSnipets';
 import { LinkToBack, SubPageHeading, TitlePage } from '../Styles';
 import { BadPractice, GoodPractice, PracticeDescription,  Subheading,  } from './Style';
 
-interface ListProps {
-  id: string;
-  name: string;
-  description: string;
-  language: string;
-  code1: string;
-  code2: string;
-}
-
 interface Props {
   type: string;
-  list: ListProps[];
+  list: PracticeProps[];
 }
 
 export default function ListPractices({ type, list }: Props) {

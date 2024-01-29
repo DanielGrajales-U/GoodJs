@@ -6,7 +6,7 @@ export const CardContent = styled.article`
     max-width: 350px;
     border-radius: 15px;
     padding: 15px;
-    margin: 20px 10px;
+    margin: 20px 15px;
     transition: .2s all ease-in-out;
     -webkit-box-shadow: 0px 8px 23px 0px rgba(0,0,0,0.6);
     -moz-box-shadow: 0px 8px 23px 0px rgba(0,0,0,0.6);

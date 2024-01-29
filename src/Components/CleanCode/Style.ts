@@ -17,7 +17,6 @@ export const Ul = styled.ul`
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 `;
 
 export const Li = styled.li`

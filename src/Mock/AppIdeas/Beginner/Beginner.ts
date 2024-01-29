@@ -2,8 +2,9 @@ import borderRadius from '../../../../public/images/Apps/border-preview.png'
 import calculator from '../../../../public/images/Apps/Calculator.png'
 import quiz from '../../../../public/images/Apps/quiz.png'
 import pomodoro from '../../../../public/images/Apps/Pomodoro.png'
+import { AppProps } from '../Interface'
 
-const Beginner = [
+const Beginner: AppProps[] = [
     {
         id: "1",
         img: borderRadius,

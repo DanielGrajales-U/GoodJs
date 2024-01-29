@@ -1,4 +1,6 @@
-const VariablesCleanCode = {
+import { DetailsCleanCodeProps } from "./Interfaces"
+
+const VariablesCleanCode: DetailsCleanCodeProps = {
     type: 'Variables',
     practices: [
       {

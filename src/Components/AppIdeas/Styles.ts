@@ -8,10 +8,8 @@ export const LevelTitle = styled.h2`
 `;
 
 export const ListApps = styled.div`
-    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: wrap; 
 `;
 
 //Details Apps

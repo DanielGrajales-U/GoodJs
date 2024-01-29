@@ -2,9 +2,14 @@ import me from '../../public/images/Daniel Grajales.jpeg'
 import anderson from '../../public/images/Anderson.png'
 import florin from '../../public/images/Florin Pop.jpg'
 import { HomeContent, ImgLink, SubtitleHome, SectionHome } from './Styles'
+import useSEO from '../Hooks/useSEO'
 
 
 export default function Home() {
+  useSEO({
+    title: 'Home',
+    description: 'Inicio de goodJs'
+  })
   return (
     <HomeContent>
       <SectionHome>

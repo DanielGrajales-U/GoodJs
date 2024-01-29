@@ -1,38 +1,49 @@
 import styled from "styled-components";
 import {Link as RouterLink} from 'react-router-dom'
 
+export const Spikes = styled.section`
+  position: relative;
+  background: #272727;
+  height: 50vh;
+  margin-top: -70px;
+  margin-bottom: 50px;
+
+  &::after{
+    content: '';
+  position: absolute;
+  right: 0;
+  left: -42%;
+  top: 100%;
+  z-index: 10;
+  display: block;
+  height: 35px;
+  background-size: 35px 100%;
+  background-image: linear-gradient(135deg, #272727 25%, transparent 25%), linear-gradient(225deg, #272727 25%, transparent 25%);
+  background-position: 0 0;
+  }
+`;
 
 export const Head = styled.header`
+    margin-top:70px;
     width: 100%;
+    display: flex;
     text-align: center;
+    flex-wrap: wrap;
 `; 
 
-export const Title = styled.h1`
-    font-family: Sans-serif-bold;
-    font-size: 80px;
-    display: flex;
-    justify-content: center;
-    letter-spacing: 2px;
-`
+export const ContentLogo = styled.div`
+    width: 100%;
+    margin-top: 100px;
+`;
 
-export const LetterG = styled.p`
-    color: #1d1f21;
-`
-export const LetterO = styled.p`
-    color: #2ea082;
-`
-export const LetterD = styled.p`
-    color: #69c16f;
-`
-export const LetterJs = styled.p`
-    color: #d6ec88;
+export const Logo = styled.img`
+    width: 400px;
 `
 
 export const Nav = styled.nav`
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: -65px;
 `;
 
 export const Ul = styled.ul`

@@ -1,16 +1,9 @@
+
+import { AppProps } from '../../Mock/AppIdeas';
 import Card from '../Card/Card';
 import { ListApps } from './Styles';
-
-interface ListProps {
-  id: string;
-  img: string;
-  title: string;
-  link: string;
-  description: string;
-}
-
 interface Props {
-  list: ListProps[];
+  list: AppProps[];
 }
 
 export default function ListAppComponent({ list }: Props) {

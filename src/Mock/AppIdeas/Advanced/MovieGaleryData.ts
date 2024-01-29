@@ -1,6 +1,7 @@
+import { DetailsProps } from '..'
 import moviegalery from '../../../../public/images/Apps/moviegalery.png'
 
-const MovieGaleryData = {
+const MovieGaleryData: DetailsProps = {
     title: "Galeria de peliculas",
     img: moviegalery,
     descriptionRequirement: "La aplicación Movie Database es tu compañera perfecta para descubrir tu próxima película. Proporciona estadísticas útiles, reseñas, calificaciones y detalles sobre cada película, permitiendo a los usuarios tomar decisiones informadas sobre qué ver a continuación. La aplicación utiliza una API de películas, como Imdb o MovieDB, para obtener información precisa y actualizada.",
@@ -22,7 +23,7 @@ const MovieGaleryData = {
             description: "En la página individual de cada película, los usuarios pueden ver detalles como calificaciones, información sobre la película y actores presentes."
         }
     ],
-    chracteristics:[
+    characteristics:[
         {
             id: "1",
             description: "Creación de Cuenta: Los usuarios pueden crear una cuenta para personalizar su experiencia y acceder a funciones adicionales."

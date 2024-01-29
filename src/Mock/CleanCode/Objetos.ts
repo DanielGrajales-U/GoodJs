@@ -1,4 +1,5 @@
-const ObjectsCleanCode = {
+import { DetailsCleanCodeProps } from './Interfaces';
+const ObjectsCleanCode: DetailsCleanCodeProps = {
     type: "Objetos y estructuras de datos",
     practices: [
       {

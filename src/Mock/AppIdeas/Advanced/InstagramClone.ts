@@ -1,6 +1,7 @@
+import { DetailsProps } from '..'
 import cloneinstagram from '../../../../public/images/Apps/instagram clone.webp'
 
-const InstagramCloneData = {
+const InstagramCloneData: DetailsProps = {
     title: "Clon de instagram",
     img: cloneinstagram,
     descriptionRequirement: "El clon de Instagram es una aplicación completa que replica las funciones esenciales de la famosa plataforma de redes sociales. Los usuarios pueden registrarse, iniciar sesión, crear publicaciones con imágenes almacenadas en el servidor y explorar las publicaciones de otros usuarios que siguen. El enfoque de pila completa (MEAN, MERN, VENM) garantiza una experiencia fluida y eficiente.",
@@ -22,7 +23,7 @@ const InstagramCloneData = {
             description: "Pueden seguir a otros usuarios y ver las publicaciones de las personas que siguen."
         },
     ],
-    chracteristics:[
+    characteristics:[
         {
             id: "1",
             description: "Feed Global de Imágenes: Los usuarios pueden explorar un feed global de imágenes."

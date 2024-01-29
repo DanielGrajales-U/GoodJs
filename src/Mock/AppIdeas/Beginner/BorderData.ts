@@ -1,6 +1,7 @@
 import borderPreview from '../../../../public/images/Apps/border-preview.png'
+import { DetailsProps } from '../Interface'
 
-const BorderPreviewData = {
+const BorderPreviewData: DetailsProps = {
     title: "Previsualizador de Bordes",
     img: borderPreview,
     descriptionRequirement: "El 'Previsualizador de Bordes' es una aplicación interactiva desarrollada en JavaScript Vanilla. Esta herramienta permite a los usuarios explorar la propiedad border-radius, visualizando instantáneamente cómo afecta la forma de un cuadro al ajustar los valores de las esquinas. Desde formas básicas hasta diseños más complejos, esta aplicación brinda una experiencia intuitiva y creativa para los desarrolladores que desean perfeccionar sus habilidades en CSS.",
@@ -18,7 +19,7 @@ const BorderPreviewData = {
             description: "Debe haber una función que permita copiar el CSS resultante al portapapeles del usuario."
         }
     ],
-    chracteristics:[
+    characteristics:[
         {
             id: "1",
             description: "Interfaz Intuitiva: Diseño fácil de usar para que los usuarios puedan interactuar sin dificultad."

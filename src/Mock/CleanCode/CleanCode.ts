@@ -4,8 +4,9 @@ import functionPng from '../../../public/icons/function.png'
 import objectPng from '../../../public/icons/objects.png'
 import pooPng from '../../../public/icons/class.png'
 import solidPng from '../../../public/icons/Solid.png'
+import { CleanCodeProps } from './Interfaces'
 
-const cleanCodeData = {
+const cleanCodeData: CleanCodeProps = {
   description:
     'El Clean Code, o código limpio, es una filosofía en desarrollo de software que enfatiza la escritura de código de manera clara, simple y legible. Aunque puede parecer una práctica trivial, mantener un código limpio es esencial para diversos aspectos del desarrollo de software. Algunas de las razones fundamentales para abogar por el Clean Code incluyen Legibilidad y Mantenibilidad, Colaboración Efectiva, Reducción de Errores, Agilidad y Flexibilidad, Facilita el Debugging entre muchas otras ventajas.',
   description2:

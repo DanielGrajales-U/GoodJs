@@ -1,6 +1,7 @@
+import { DetailsProps } from './../Interface';
 import quiz from '../../../../public/images/Apps/quiz.png'
 
-const QuizData = {
+const QuizData: DetailsProps = {
     title: "Quiz App",
     img: quiz,
     descriptionRequirement: "La aplicación de Quiz te brinda la oportunidad de practicar y evaluar tus conocimientos al responder preguntas en un formato de cuestionario. Como desarrollador, puedes utilizar esta aplicación para evaluar las habilidades de codificación de otros desarrolladores, abarcando temas como HTML, CSS, JavaScript, Python, PHP, y más.",
@@ -22,7 +23,7 @@ const QuizData = {
             description: "Al finalizar, los usuarios pueden ver las siguientes estadísticas: Tiempo que tomó completar el quiz. Cantidad de respuestas correctas.Un mensaje que indica si aprobaron o no el quiz."
         },
     ],
-    chracteristics:[
+    characteristics:[
         {
             id: "1",
             description: "Compartir Resultados: Los usuarios pueden compartir los resultados de un quiz en redes sociales."

@@ -1,7 +1,20 @@
-const interviewQuestionsData = [
+interface OptionProps {
+  [key: string]: string | undefined;
+}
+
+export interface InterviewQuestionProps {
+  id: number;
+  question: string;
+  code?: string;
+  options: OptionProps;
+  correctAnswer: string;
+  explanation: string;
+}
+
+const interviewQuestionsData: InterviewQuestionProps[] = [
   {
     id: 1,
-    question: "¿Cuál es el resultado del siguiente código?",
+    question: '¿Cuál es el resultado del siguiente código?',
     code: `
 function sayHi() {
   console.log(name);
@@ -32,7 +45,7 @@ sayHi();
   },
   {
     id: 2,
-    question: "¿Cuál es el resultado?",
+    question: '¿Cuál es el resultado?',
     code: `
 for (var i = 0; i < 3; i++) {
   setTimeout(() => console.log(i), 1);
@@ -60,7 +73,7 @@ for (let i = 0; i < 3; i++) {
   },
   {
     id: 3,
-    question: "¿Cuál es el resultado?",
+    question: '¿Cuál es el resultado?',
     code: `
 const shape = {
   radius: 10,
@@ -91,7 +104,7 @@ console.log(shape.perimeter());
   },
   {
     id: 4,
-    question: "¿Cuál es el resultado?",
+    question: '¿Cuál es el resultado?',
     code: `
 +true;
 !'Lydia';
@@ -147,7 +160,7 @@ const mouse = {
   },
   {
     id: 6,
-    question: "¿Cuál es el resultado?",
+    question: '¿Cuál es el resultado?',
     code: `
 let c = { greeting: 'Hey!' };
 let d;
@@ -173,7 +186,7 @@ console.log(d.greeting);
   },
   {
     id: 7,
-    question: "¿Cuál es el resultado?",
+    question: '¿Cuál es el resultado?',
     code: `
 let a = 3;
 let b = new Number(3);
@@ -200,7 +213,7 @@ console.log(b === c);
   },
   {
     id: 8,
-    question: "¿Cuál es el resultado?",
+    question: '¿Cuál es el resultado?',
     code: `
 class Camaleón {
   static colorChange(newColor) {
@@ -229,7 +242,7 @@ console.log(freddie.colorChange('naranja'));
   },
   {
     id: 9,
-    question: "¿Cuál es el resultado?",
+    question: '¿Cuál es el resultado?',
     code: `
 let greeting;
 greetign = {}; // ¡Error tipográfico!
@@ -277,7 +290,7 @@ bark.animal = 'perro';
   },
   {
     id: 11,
-    question: "¿Cuál es la salida?",
+    question: '¿Cuál es la salida?',
     code: `
 function Person(firstName, lastName) {
   this.firstName = firstName;
@@ -292,19 +305,19 @@ Person.getFullName = function() {
     console.log(member.getFullName());
       `,
     options: {
-      A: "TypeError",
-      B: "SyntaxError",
-      C: "Lydia Hallie",
-      D: "undefined undefined",
+      A: 'TypeError',
+      B: 'SyntaxError',
+      C: 'Lydia Hallie',
+      D: 'undefined undefined',
     },
-    correctAnswer: "A",
+    correctAnswer: 'A',
     explanation: `
     En JavaScript, las funciones son objetos y, por lo tanto, el método getFullName se agrega al objeto de la función constructora en sí. Por esa razón, podemos llamar a Person.getFullName(), pero member.getFullName arroja un TypeError.
       `,
   },
   {
     id: 12,
-    question: "¿Cuál es la salida?",
+    question: '¿Cuál es la salida?',
     code: `
 function Person(firstName, lastName) {
   this.firstName = firstName;
@@ -323,7 +336,7 @@ console.log(sarah);
       C: "Person {firstName: 'Lydia', lastName: 'Hallie'} and {}",
       D: "Person {firstName: 'Lydia', lastName: 'Hallie'} and ReferenceError",
     },
-    correctAnswer: "A",
+    correctAnswer: 'A',
     explanation: `
     Para sarah, no usamos la palabra clave new. Cuando usamos new, this se refiere al nuevo objeto vacío que creamos. Sin embargo, si no agregas new, this se refiere al objeto global.
     
@@ -332,33 +345,33 @@ console.log(sarah);
   },
   {
     id: 13,
-    question: "¿Cuáles son las tres fases de la propagación de eventos?",
+    question: '¿Cuáles son las tres fases de la propagación de eventos?',
     options: {
-      A: "Target > Capturing > Bubbling",
-      B: "Bubbling > Target > Capturing",
-      C: "Target > Bubbling > Capturing",
-      D: "Capturing > Target > Bubbling",
+      A: 'Target > Capturing > Bubbling',
+      B: 'Bubbling > Target > Capturing',
+      C: 'Target > Bubbling > Capturing',
+      D: 'Capturing > Target > Bubbling',
     },
-    correctAnswer: "D",
+    correctAnswer: 'D',
     explanation: `
   Durante la fase de captura, el evento atraviesa los elementos ancestros hasta llegar al elemento objetivo. Luego, llega al elemento objetivo, y comienza el burbujeo.
     `,
-},
+  },
   {
     id: 14,
-    question: "¿Todos los objetos tienen prototipos?",
+    question: '¿Todos los objetos tienen prototipos?',
     options: {
-      A: "true",
-      B: "false",
+      A: 'true',
+      B: 'false',
     },
-    correctAnswer: "B",
+    correctAnswer: 'B',
     explanation: `
   Todos los objetos tienen prototipos, excepto el objeto base. El objeto base es el objeto creado por el usuario o un objeto creado utilizando la palabra clave new. El objeto base tiene acceso a algunos métodos y propiedades, como .toString. ¡Esta es la razón por la cual puedes usar métodos incorporados de JavaScript! Todos esos métodos están disponibles en el prototipo. Aunque JavaScript no puede encontrarlo directamente en tu objeto, baja por la cadena de prototipos y lo encuentra allí, lo que lo hace accesible para ti.
     `,
   },
   {
     id: 15,
-    question: "¿Cuál es el resultado del siguiente código?",
+    question: '¿Cuál es el resultado del siguiente código?',
     code: `
 function sum(a, b) {
   return a + b;
@@ -385,7 +398,7 @@ sum(1, '2');
   },
   {
     id: 16,
-    question: "¿Cuál es el resultado del siguiente código?",
+    question: '¿Cuál es el resultado del siguiente código?',
     code: `
 let number = 0;
 console.log(number++);
@@ -415,7 +428,7 @@ console.log(number);
   },
   {
     id: 17,
-    question: "¿Cuál es el resultado del siguiente código?",
+    question: '¿Cuál es el resultado del siguiente código?',
     code: `
 function getPersonInfo(one, two, three) {
   console.log(one);
@@ -441,7 +454,7 @@ getPersonInfo \${person} is \${age} years old;
   },
   {
     id: 18,
-    question: "¿Cuál es el resultado?",
+    question: '¿Cuál es el resultado?',
     code: `
 function checkAge(data) {
   if (data === { age: 18 }) {
@@ -471,7 +484,7 @@ checkAge({ age: 18 });
   },
   {
     id: 19,
-    question: "¿Cuál es el resultado?",
+    question: '¿Cuál es el resultado?',
     code: `
 function getAge(...args) {
   console.log(typeof args);
@@ -492,7 +505,7 @@ getAge(21);
   },
   {
     id: 20,
-    question: "¿Cuál es el resultado?",
+    question: '¿Cuál es el resultado?',
     code: `
 function getAge() {
   'use strict';
@@ -515,15 +528,15 @@ getAge();
   },
   {
     id: 21,
-    question: "¿Cuál es el resultado de sum?",
+    question: '¿Cuál es el resultado de sum?',
     code: `
 const sum = eval('10*10+5');
     `,
     options: {
-      A: 105,
-      B: '"105"',
+      A: '105',
+      B: '105',
       C: 'TypeError',
-      D: '"10*10+5"',
+      D: '10*10+5',
     },
     correctAnswer: 'A',
     explanation: `
@@ -532,7 +545,7 @@ const sum = eval('10*10+5');
   },
   {
     id: 22,
-    question: "How long is cool_secret accessible?",
+    question: 'How long is cool_secret accessible?',
     code: `
   sessionStorage.setItem('cool_secret', 123);
     `,
@@ -551,7 +564,7 @@ const sum = eval('10*10+5');
   },
   {
     id: 23,
-    question: "¿Cuál es el resultado?",
+    question: '¿Cuál es el resultado?',
     code: `
 var num = 8;
 var num = 10;
@@ -559,8 +572,8 @@ var num = 10;
 console.log(num);
     `,
     options: {
-      A: 8,
-      B: 10,
+      A: '8',
+      B: '10',
       C: 'SyntaxError',
       D: 'ReferenceError',
     },
@@ -573,7 +586,7 @@ console.log(num);
   },
   {
     id: 24,
-    question: "¿Cuál es el resultado?",
+    question: '¿Cuál es el resultado?',
     code: `
 const obj = { 1: 'a', 2: 'b', 3: 'c' };
 const set = new Set([1, 2, 3, 4, 5]);
@@ -598,7 +611,7 @@ set.has(1);
   },
   {
     id: 25,
-    question: "¿Cuál es el resultado?",
+    question: '¿Cuál es el resultado?',
     code: `
 const obj = { a: 'one', b: 'two', a: 'three' };
 console.log(obj);
@@ -616,7 +629,8 @@ console.log(obj);
   },
   {
     id: 26,
-    question: "El contexto de ejecución global de JavaScript crea dos cosas para ti: el objeto global y la palabra clave 'this'.",
+    question:
+      "El contexto de ejecución global de JavaScript crea dos cosas para ti: el objeto global y la palabra clave 'this'.",
     options: {
       A: 'true',
       B: 'false',
@@ -629,7 +643,7 @@ console.log(obj);
   },
   {
     id: 27,
-    question: "¿Cuál es el resultado?",
+    question: '¿Cuál es el resultado?',
     code: `
 for (let i = 1; i < 5; i++) {
   if (i === 3) continue;
@@ -649,7 +663,7 @@ for (let i = 1; i < 5; i++) {
   },
   {
     id: 28,
-    question: "¿Cuál es el resultado?",
+    question: '¿Cuál es el resultado?',
     code: `
 String.prototype.giveLydiaPizza = () => {
   return 'Just give Lydia pizza already!';
@@ -672,7 +686,7 @@ console.log(name.giveLydiaPizza())
   },
   {
     id: 29,
-    question: "¿Cuál es el resultado?",
+    question: '¿Cuál es el resultado?',
     code: `
 const a = {};
 const b = { key: 'b' };
@@ -684,9 +698,9 @@ a[c] = 456;
 console.log(a[b]);
     `,
     options: {
-      A: 123,
-      B: 456,
-      C: undefined,
+      A: '123',
+      B: '456',
+      C: 'undefined',
       D: 'ReferenceError',
     },
     correctAnswer: 'B',
@@ -700,7 +714,7 @@ console.log(a[b]);
   },
   {
     id: 30,
-    question: "¿Cuál es el resultado?",
+    question: '¿Cuál es el resultado?',
     code: `
 const foo = () => console.log('First');
 const bar = () => setTimeout(() => console.lo('Second'));
@@ -724,7 +738,7 @@ baz();
   
   After the callback is pushed to the WebAPI, the setTimeout function itself (but not the callback!) is popped off the stack.
     `,
-  }
+  },
 ];
 
 export default interviewQuestionsData;

@@ -1,6 +1,7 @@
 import typing from '../../../../public/images/Apps/typing practice.png'
+import { DetailsProps } from '../Interface'
 
-const TypingPracticeData = {
+const TypingPracticeData: DetailsProps = {
     title: "Practica de mecanografia",
     img: typing,
     descriptionRequirement: "La aplicación Typing Practice está diseñada para mejorar la velocidad y precisión de escritura de los desarrolladores. Presenta una palabra que debes escribir dentro de un intervalo de tiempo específico. Si la palabra se escribe incorrectamente, permanece en pantalla y el intervalo de tiempo permanece igual. Pero, si la palabra se escribe correctamente, se muestra una nueva palabra y el intervalo de tiempo se reduce ligeramente.",
@@ -34,7 +35,7 @@ const TypingPracticeData = {
             description: "Aparece un mensaje indicando al usuario que lo intente de nuevo si se ingresa una letra incorrecta."
         }
     ],
-    chracteristics:[
+    characteristics:[
         {
             id: "1",
             description: "Tonos Audibles: Los usuarios pueden escuchar tonos audibles únicos para indicar cuando se muestra una nueva palabra, cuando una palabra se escribe correctamente o cuando se ingresa una letra incorrecta."

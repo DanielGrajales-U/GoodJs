@@ -9,6 +9,7 @@ export { default as BorderData } from './Beginner/BorderData';
 export { default as CalculatorData } from './Beginner/CalculatorData';
 export { default as PomodoroData } from './Beginner/PomodoroData';
 export { default as QuizData } from './Beginner/QuizData';
+export * from './Interface';
 export { default as BookFinderData } from './Middle/BookFinderData';
 export { default as ExtentionThemeData } from './Middle/ExtentionThemeData';
 export { default as MemoryCardData } from './Middle/MemoryCardData';

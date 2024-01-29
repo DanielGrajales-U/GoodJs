@@ -1,6 +1,7 @@
 import bookfinder from '../../../../public/images/Apps/book-finder.png'
+import { DetailsProps } from '../Interface'
 
-const BookFinderData = {
+const BookFinderData: DetailsProps = {
     title: "Buscador de libros",
     img: bookfinder,
     descriptionRequirement: "La aplicación Book Finder permite a los usuarios buscar libros al ingresar consultas, como título o autor. Al enviar la consulta, se realiza una llamada a una API que devuelve un conjunto de libros con datos detallados, como título, autor, fecha de publicación y una imagen de la portada. La lista de libros resultantes se muestra en la página de manera clara y accesible.",
@@ -18,7 +19,7 @@ const BookFinderData = {
             description: "Se muestra una lista de libros en la página, con información como título, autor y fecha de publicación."
         }
     ],
-    chracteristics:[
+    characteristics:[
         {
             id: "1",
             description: "Para cada libro en la lista, se agrega un enlace que dirige al usuario a un sitio externo con más información sobre el libro."

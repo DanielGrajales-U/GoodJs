@@ -15,7 +15,7 @@ export default function CleanCode() {
       <Ul>
         {
           cleanCodeData.links.map((link) =>(
-            <Card className='card-clean-code' img={link.img} title={link.title} description={link.description} link={link.link}/>
+            <Card key={link.id} className='card-clean-code' img={link.img} title={link.title} description={link.description} link={link.link}/>
             ))
           }
       </Ul>

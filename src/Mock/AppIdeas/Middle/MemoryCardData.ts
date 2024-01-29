@@ -1,6 +1,7 @@
+import { DetailsProps } from './../Interface';
 import memorycard from '../../../../public/images/Apps/memory-card.png'
 
-const MemoryCardData = {
+const MemoryCardData: DetailsProps = {
     title: "Esta con esta",
     img: memorycard,
     descriptionRequirement: "Card Memory Game ofrece una experiencia cautivadora al desafiar a los jugadores a descubrir parejas de cartas a través de clics estratégicos. Presenta un tablero de cartas de tamaño n x n, todas ocultas al principio. Al iniciar el juego mediante un clic en el botón correspondiente, se activa un temporizador, agregando un elemento de urgencia a la diversión.",
@@ -26,7 +27,7 @@ const MemoryCardData = {
             description: "Al encontrar todas las parejas, un cuadro de diálogo felicita al jugador y muestra el tiempo empleado."
         }
     ],
-    chracteristics:[
+    characteristics:[
         {
             id: "1",
             description: "Niveles de Dificultad: Los jugadores pueden seleccionar entre distintos niveles (Fácil, Medio, Difícil), ajustando el tiempo disponible y/o el número de cartas para una experiencia personalizada."

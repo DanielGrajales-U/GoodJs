@@ -1,6 +1,7 @@
+import { DetailsProps } from './../Interface';
 import extentiontheme from '../../../../public/images/Apps/extention-theme.png'
 
-const ExtentionThemeData = {
+const ExtentionThemeData: DetailsProps = {
     title: "Extencion de tema para Chrome",
     img: extentiontheme,
     descriptionRequirement: "Crear esta extensión no solo te permite personalizar la apariencia de tu navegador, sino que también mejora tus habilidades de JavaScript. Aprendes a manipular el DOM, gestionar eventos y trabajar con la API de Chrome. Además, explorarás conceptos como almacenamiento local y la creación de interfaces de usuario interactivas.",
@@ -18,7 +19,7 @@ const ExtentionThemeData = {
             description: "Pueden instalar y configurar la extensión como el tema predeterminado."
         },
     ],
-    chracteristics:[
+    characteristics:[
         {
             id: "1",
             description: "Despliegue en la Tienda de Chrome: Los usuarios pueden desplegar la extensión en la tienda de Chrome para que otros la descarguen y disfruten."

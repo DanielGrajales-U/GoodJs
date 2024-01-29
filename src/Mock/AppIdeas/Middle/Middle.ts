@@ -2,8 +2,9 @@ import bookfinder from '../../../../public/images/Apps/book-finder.png'
 import memorycard from '../../../../public/images/Apps/memory-card.png'
 import mecanografia from '../../../../public/images/Apps/typing practice.png'
 import extentiontheme from '../../../../public/images/Apps/extention-theme.png'
+import { AppProps } from '../Interface'
 
-const Middle = [
+const Middle: AppProps[] = [
     {
         id: "1",
         img: bookfinder,

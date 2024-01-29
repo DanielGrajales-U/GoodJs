@@ -1,6 +1,7 @@
+import { DetailsProps } from '..'
 import videogame from '../../../../public/images/Apps/game.png'
 
-const VideoGameData = {
+const VideoGameData: DetailsProps = {
     title: "Video juego",
     img: videogame,
     descriptionRequirement: "En este proyecto, pondrás a prueba tus habilidades de animación al crear un juego de carreras de insectos. Los usuarios pueden personalizar el juego eligiendo iconos de insectos, asignando nombres, seleccionando la velocidad y apostando por el posible ganador. La velocidad de cada insecto se ajusta aleatoriamente antes de la carrera, creando un desafío emocionante.",
@@ -22,7 +23,7 @@ const VideoGameData = {
             description: "Controles de juego que incluyen números de carril, iconos de insectos, nombres y una selección de velocidad."
         }
     ],
-    chracteristics:[
+    characteristics:[
         {
             id: "1",
             description: "Métricas de Carreras: Los usuarios pueden ver métricas de carrera para cada insecto, mostrando el número de carreras, victorias y derrotas."

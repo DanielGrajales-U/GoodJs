@@ -1,5 +1,6 @@
+import { DetailsCleanCodeProps } from "./Interfaces"
 
-const ClassCleanCode = {
+const ClassCleanCode: DetailsCleanCodeProps = {
     type: "Clases",
     practices: [
       {

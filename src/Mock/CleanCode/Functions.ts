@@ -1,4 +1,5 @@
-const FunctionCleanCode = {
+import { DetailsCleanCodeProps } from './Interfaces';
+const FunctionCleanCode: DetailsCleanCodeProps = {
     type: 'Funciones',
     practices: [
       {

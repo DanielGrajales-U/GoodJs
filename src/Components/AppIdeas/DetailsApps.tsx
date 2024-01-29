@@ -1,25 +1,8 @@
+import { DetailsProps } from '../../Mock/AppIdeas';
 import { PublicRoutes } from '../../models';
 import { LinkToBack, SubPageHeading, TitlePage } from '../Styles';
 import { DescriptionDetail, ExampleList, ImgDetailApp, MoreDetailsList, RequirementsList, ExampleLink, SubTitleDetails } from './Styles';
 
-interface DetailsProps {
-  id: string;
-  description: string;
-}
-
-interface ExampleProps {
-  name: string;
-  url: string;
-}
-
-interface Props {
-  title: string;
-  img: string;
-  descriptionRequirement: string;
-  requirements: DetailsProps[];
-  characteristics: DetailsProps[];
-  examples: ExampleProps[];
-}
 
 export default function DetailsApps({
   title,
@@ -28,7 +11,7 @@ export default function DetailsApps({
   requirements,
   characteristics,
   examples,
-}: Props) {
+}: DetailsProps) {
   return (
     <>
       <SubPageHeading>

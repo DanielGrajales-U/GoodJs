@@ -2,8 +2,9 @@ import moviegalery from '../../../../public/images/Apps/moviegalery.png'
 import clondeinstagram from '../../../../public/images/Apps/instagram clone.webp'
 import chat from '../../../../public/images/Apps/chat.png'
 import videojuego from '../../../../public/images/Apps/game.png'
+import { AppProps } from '..'
 
-const Advanced = [
+const Advanced: AppProps[] = [
     {
         id: "1",
         img: moviegalery,

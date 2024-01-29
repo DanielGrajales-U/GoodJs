@@ -1,4 +1,6 @@
-const SolidCleanCode = {
+import { DetailsCleanCodeProps } from "./Interfaces";
+
+const SolidCleanCode: DetailsCleanCodeProps = {
   type: 'SOLID',
   practices: [
     {

@@ -1,11 +1,12 @@
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import { AppAdvancedRoutes, AppBeginnerRoutes, AppMiddleRoutes, AppsIdeasRoutes, CleanCodeRoutes, PublicRoutes } from './models'
-import { Algorithms, AppIdeas, JsCleanCode, JsInterviews } from './Pages'
+import { AppIdeas, JsCleanCode, JsInterviews } from './Pages'
 import Header from './Components/Header/Header'
 import Home from './Pages/Home'
 import { FunctionComponent, ObjectComponent, ClassComponent, VariableComponent, SolidComponents } from './Components/CleanCode/ContentCleanCode'
 import AppIdeasComponent from './Components/AppIdeas/AppIdeasComponent'
 import { BorderDetails, CalculatorDetails, QuizDetails, PomodoroDetails, BookFinderDetails, MemoryCardDetails, TypingDetails, ExtentionThemeDetails, MovieGaleryDetails, InstagramCloneDetails, ChatDetails, VideoGameDetails } from './Components/AppIdeas'
+import DesignPattern from './Pages/DesignPattern'
 function App() {
   return (
     <>
@@ -20,7 +21,7 @@ function App() {
             <Route path={CleanCodeRoutes.CLASS} element={<ClassComponent/>}/>
             <Route path={CleanCodeRoutes.SOLID} element={<SolidComponents/>}/>
           </Route>
-          <Route path={PublicRoutes.ALGORITHMS} element={<Algorithms/>}/>
+          <Route path={PublicRoutes.DESIGNPATTERN} element={<DesignPattern/>}/>
           <Route path={PublicRoutes.APPIDEAS} element={<AppIdeas/>}>
             <Route path={AppsIdeasRoutes.MAIN} element={<AppIdeasComponent/>}/>
             <Route path={AppBeginnerRoutes.BORDERRADIUS} element={<BorderDetails/>}/>

@@ -1,6 +1,7 @@
+import { DetailsProps } from './../Interface';
 import calculator from '../../../../public/images/Apps/Calculator.png'
 
-const CalculatorData = {
+const CalculatorData: DetailsProps = {
     title: "Calculadora",
     img: calculator,
     descriptionRequirement: "La 'Calculadora' es una aplicación que va más allá de ser una herramienta útil, también representa una excelente oportunidad para comprender la interfaz de usuario y el procesamiento de eventos en una aplicación. En este proyecto, crearás una calculadora que admita cálculos aritméticos básicos con números enteros. La estilización de la calculadora queda a tu imaginación, ¡así que sé creativo! También puede ser útil experimentar con la aplicación de calculadora en tu dispositivo móvil para comprender mejor la funcionalidad básica y los casos extremos.",
@@ -34,7 +35,7 @@ const CalculatorData = {
             description: "La aplicación debe mostrar 'ERR' si alguna operación superaría el límite de 8 dígitos."
         }
     ],
-    chracteristics:[
+    characteristics:[
         {
             id: "1",
             description: "Cambio de Signo: Los usuarios pueden hacer clic en un botón '+/-' para cambiar el signo del número que se muestra actualmente."

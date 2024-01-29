@@ -1,7 +1,7 @@
 export const PublicRoutes = {
     HOME: '/',
     JSCLEANCODE: 'cleancode',
-    ALGORITHMS: 'algorithms',
+    DESIGNPATTERN: 'designpattern',
     APPIDEAS: 'appideas',
     JSINTERVIEWS: 'jsinterviews',
 }

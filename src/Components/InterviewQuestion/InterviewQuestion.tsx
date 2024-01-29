@@ -1,23 +1,11 @@
+import { InterviewQuestionProps } from '../../Mock/Interviews/InterviewQuestions';
 import CodeSnippet from '../CodeSnipets/CodeSnipets';
 import { StylesContent } from '../Styles';
 import { CorrectAnswer, Details, ListOptions, Question, Summary } from './Styles';
 
-interface OptionProps {
-    [key: string]: string | undefined;
-}
-
-export interface ListProps {
-  id: number;
-  question: string;
-  code?: string;
-  options: OptionProps;
-  correctAnswer: string;
-  explanation: string;
-}
-
 
 interface Props {
-  list: ListProps[];
+  list: InterviewQuestionProps[];
 }
 
 export default function InterviewQuestion( {list} : Props) {
