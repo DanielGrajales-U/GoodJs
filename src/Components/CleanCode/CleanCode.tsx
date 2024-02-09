@@ -1,16 +1,16 @@
 import { Outlet } from 'react-router-dom'
 import cleanCodeData from '../../Mock/CleanCode/CleanCode'
-import { DescriptionHeader, HeaderCleanCode, Ul } from './Style'
+import { DescriptionHeader, Ul } from './Style'
 import Card from '../Card/Card'
-import { StylesContent } from '../Styles'
+import { HeaderSites, StylesContent } from '../Styles'
 
 export default function CleanCode() {
   return (
     <StylesContent>
-      <HeaderCleanCode>
+      <HeaderSites>
         <DescriptionHeader>{cleanCodeData.description}</DescriptionHeader>
         <DescriptionHeader>{cleanCodeData.description2}</DescriptionHeader>
-      </HeaderCleanCode>
+      </HeaderSites>
       <Outlet />
       <Ul>
         {

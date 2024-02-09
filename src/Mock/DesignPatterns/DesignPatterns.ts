@@ -1,6 +1,9 @@
 import { DesignPatternProps } from "./Interface";
 
-const designPatterns: DesignPatternProps[] = [
+const designPatternsData: DesignPatternProps = {
+  name: "Design Patterns",
+  description: "En resumen, aprender patrones de diseño es esencial para desarrollar habilidades sólidas de diseño de software y para crear sistemas de software de alta calidad que sean robustos, escalables y fáciles de mantener. Los patrones de diseño no solo proporcionan soluciones efectivas a problemas comunes, sino que también promueven buenas prácticas de programación y diseño que son fundamentales para el éxito en el desarrollo de software.",
+  patterns: [
   {
     id: 1,
     name: 'Singleton',
@@ -228,7 +231,8 @@ const designPatterns: DesignPatternProps[] = [
     coffee = new SugarDecorator(coffee);
     
     console.log(coffee.cost()); // 8`
-  },
-];
+  }
+  ],
+};
 
-export default designPatterns
+export default designPatternsData

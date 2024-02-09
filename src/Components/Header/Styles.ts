@@ -37,7 +37,7 @@ export const ContentLogo = styled.div`
 `;
 
 export const Logo = styled.img`
-    width: 400px;
+    width: 55%;
 `
 
 export const Nav = styled.nav`
@@ -50,20 +50,22 @@ export const Ul = styled.ul`
     list-style: none;
 `;
 
-export const Li = styled.li`
-     display: inline-block;
-     margin-right: 30px;
-`;
-
 export const Link = styled(RouterLink)`
+    display: inline-block;
+    background-color: #000;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin-right: 30px;
+    margin-top: 10px;
     text-decoration: none;
-    color: #000;
+    color: #fff;
     font-family: Sans-serif-bold;
     font-weight: bolder;
     letter-spacing: 1px;
-    font-size: 20px;
+    font-size: 17px;
     transition: .2s all ease-in;
     &:hover{
-        color: #d6ec88
+        color: #efe62c;
+        transform: scale(1.04);
     }
 `

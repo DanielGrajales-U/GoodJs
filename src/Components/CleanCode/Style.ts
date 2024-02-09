@@ -1,26 +1,15 @@
 import styled from "styled-components";
 import { Link as RouterLink } from "react-router-dom";
 //CleanCode Styles
-export const HeaderCleanCode = styled.header`
-    background-color: #1d1f21;
-    border-radius: 10px;
-    padding: 10px;
-`;
-
 export const DescriptionHeader = styled.p`
-    font-size: 18px;
-    color: #e0e0e0
-`
-
+`;
 
 export const Ul = styled.ul`
     list-style: none;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-`;
-
-export const Li = styled.li`
-     margin-right: 30px;
+    padding-inline-start: 0px;
 `;
 
 export const Link = styled(RouterLink)`

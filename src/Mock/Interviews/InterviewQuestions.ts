@@ -1,17 +1,8 @@
-interface OptionProps {
-  [key: string]: string | undefined;
-}
+import { InterviewQuestionProps } from "./interface";
 
-export interface InterviewQuestionProps {
-  id: number;
-  question: string;
-  code?: string;
-  options: OptionProps;
-  correctAnswer: string;
-  explanation: string;
-}
-
-const interviewQuestionsData: InterviewQuestionProps[] = [
+const interviewQuestionsData: InterviewQuestionProps = {
+  description: "En esta sección, encontrarás una variedad de preguntas frecuentes que suelen formularse en entrevistas de trabajo relacionadas con JavaScript. Estas preguntas están diseñadas para evaluar tu comprensión del lenguaje JavaScript, así como tus habilidades para resolver problemas y aplicar conceptos clave en situaciones prácticas.Desde preguntas sobre conceptos fundamentales como tipos de datos y estructuras de control, hasta consultas sobre características avanzadas del lenguaje y buenas prácticas de codificación, estas preguntas te ayudarán a prepararte para entrevistas en las que se evalúe tu conocimiento y experiencia en JavaScript.",
+  questions:[
   {
     id: 1,
     question: '¿Cuál es el resultado del siguiente código?',
@@ -739,6 +730,6 @@ baz();
   After the callback is pushed to the WebAPI, the setTimeout function itself (but not the callback!) is popped off the stack.
     `,
   },
-];
+]};
 
 export default interviewQuestionsData;

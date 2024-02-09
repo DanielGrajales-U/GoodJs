@@ -1,7 +1,7 @@
 import InterviewQuestion from "../Components/InterviewQuestion/InterviewQuestion";
 import useSEO from "../Hooks/useSEO";
 import interviewQuestionsData from "../Mock/Interviews/InterviewQuestions";
-import { InterviewQuestionProps } from "../Mock/Interviews/InterviewQuestions";
+import { ListInterviewQuestionProps } from "../Mock/Interviews/interface";
 
 export default function JsInterviews() {
   useSEO({
@@ -9,6 +9,6 @@ export default function JsInterviews() {
     description: 'Preguntas frecuentes en entrevistas'
   })
   return (
-    <InterviewQuestion list={interviewQuestionsData as InterviewQuestionProps[]}/>
+    <InterviewQuestion list={interviewQuestionsData.questions as ListInterviewQuestionProps[]}/>
   )
 }

@@ -7,9 +7,12 @@ export const LevelTitle = styled.h2`
     color: #2ea082;
 `;
 
-export const ListApps = styled.div`
+export const ListApps = styled.ul`
     display: flex;
     flex-wrap: wrap; 
+    justify-content: center;
+    max-width: 1400px;
+    padding-inline-start: 0px;
 `;
 
 //Details Apps

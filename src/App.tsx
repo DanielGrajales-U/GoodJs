@@ -7,6 +7,7 @@ import { FunctionComponent, ObjectComponent, ClassComponent, VariableComponent, 
 import AppIdeasComponent from './Components/AppIdeas/AppIdeasComponent'
 import { BorderDetails, CalculatorDetails, QuizDetails, PomodoroDetails, BookFinderDetails, MemoryCardDetails, TypingDetails, ExtentionThemeDetails, MovieGaleryDetails, InstagramCloneDetails, ChatDetails, VideoGameDetails } from './Components/AppIdeas'
 import DesignPattern from './Pages/DesignPattern'
+import Footer from './Components/Footer/Footer'
 function App() {
   return (
     <>
@@ -43,6 +44,7 @@ function App() {
           <Route path='*' element={<p>Not Found</p>}/>
         </Routes>
       </BrowserRouter>
+      <Footer/>
     </>
   )
 }

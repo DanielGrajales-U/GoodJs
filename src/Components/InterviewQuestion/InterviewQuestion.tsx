@@ -1,16 +1,20 @@
-import { InterviewQuestionProps } from '../../Mock/Interviews/InterviewQuestions';
+import interviewQuestionsData from '../../Mock/Interviews/InterviewQuestions';
+import { ListInterviewQuestionProps } from '../../Mock/Interviews/interface';
 import CodeSnippet from '../CodeSnipets/CodeSnipets';
-import { StylesContent } from '../Styles';
+import { HeaderSites, StylesContent } from '../Styles';
 import { CorrectAnswer, Details, ListOptions, Question, Summary } from './Styles';
 
 
 interface Props {
-  list: InterviewQuestionProps[];
+  list: ListInterviewQuestionProps[];
 }
 
 export default function InterviewQuestion( {list} : Props) {
   return (
     <StylesContent>
+      <HeaderSites>
+        <p>{interviewQuestionsData.description}</p>
+      </HeaderSites>
       {list.map((question) => (
         <div>
           <Question>

@@ -1,32 +1,34 @@
-import me from '../../public/images/Daniel Grajales.jpeg'
-import anderson from '../../public/images/Anderson.png'
-import florin from '../../public/images/Florin Pop.jpg'
-import { HomeContent, ImgLink, SubtitleHome, SectionHome } from './Styles'
-import useSEO from '../Hooks/useSEO'
+import styled from 'styled-components';
 
+// Estilos del componente utilizando Styled Components
+const Container = styled.div`
+  padding: 20px;
+  text-align: center;
+`;
+
+const Title = styled.h1`
+  font-size: 36px;
+  margin-bottom: 20px;
+`;
+
+const Description = styled.p`
+  font-size: 20px;
+  margin-bottom: 40px;
+`;
+
+const SpanJs = styled.span`
+  color: #efe62c
+`;
 
 export default function Home() {
-  useSEO({
-    title: 'Home',
-    description: 'Inicio de goodJs'
-  })
+
   return (
-    <HomeContent>
-      <SectionHome>
-        <SubtitleHome>Creado por</SubtitleHome>
-        <a href='https://daniel-grajales.netlify.app/' target='.blank'>
-          <ImgLink src={me}/>
-        </a>
-      </SectionHome>
-      <SectionHome>
-        <SubtitleHome>Creditos</SubtitleHome>
-        <a href='https://github.com/andersontr15/clean-code-javascript-es?tab=readme-ov-file#contenido' target='.blank'>
-          <ImgLink src={anderson}/>
-        </a>
-        <a href='https://github.com/florinpop17/app-ideas' target='.blank'>
-          <ImgLink src={florin}/>
-        </a>
-      </SectionHome>
-    </HomeContent>
-  )
+    <Container>
+      <Title>Bienvenido a Good<SpanJs>JS</SpanJs></Title>
+      <Description>
+        En GoodJs, estamos comprometidos a proporcionarte recursos de alta calidad para mejorar tus habilidades en JavaScript.
+        Como desarrollador, sé lo frustrante que puede ser buscar información dispersa y desordenada en diferentes sitios web. Es por eso que decidí crear GoodJs: un banco de información organizada y relevante para todos los que desean profundizar en JavaScript.
+      </Description>
+    </Container>
+  );
 }
