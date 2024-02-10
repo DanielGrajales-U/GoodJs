@@ -42,10 +42,9 @@ body{
 }
 
 .card-apps{
-  max-width: 100%;
+  width: 100%;
+  height: 250px;
   max-height: 250px;
   object-fit: cover;
   border-radius: 5px;
-  text-overflow: clip;
 }
-
