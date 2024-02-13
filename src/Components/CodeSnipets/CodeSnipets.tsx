@@ -8,7 +8,7 @@ interface CodeSnippetProps {
 
 export default function CodeSnippet ({language, code}: CodeSnippetProps) {
     return(
-    <SyntaxHighlighter language={language} style={atomDark}>
+    <SyntaxHighlighter language={language} style={atomDark} data-aos="zoom-in" data-aos-duration='1000'>
         {code}
     </SyntaxHighlighter>
     )

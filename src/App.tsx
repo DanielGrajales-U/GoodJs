@@ -1,3 +1,6 @@
+import { useEffect } from 'react'
+import Aos from 'aos' 
+import 'aos/dist/aos.css'
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import { AppAdvancedRoutes, AppBeginnerRoutes, AppMiddleRoutes, AppsIdeasRoutes, CleanCodeRoutes, PublicRoutes } from './models'
 import { AppIdeas, JsCleanCode, JsInterviews } from './Pages'
@@ -9,6 +12,9 @@ import { BorderDetails, CalculatorDetails, QuizDetails, PomodoroDetails, BookFin
 import DesignPattern from './Pages/DesignPattern'
 import Footer from './Components/Footer/Footer'
 function App() {
+  useEffect(() =>{
+    Aos.init()
+  })
   return (
     <>
       <BrowserRouter>

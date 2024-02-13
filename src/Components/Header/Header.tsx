@@ -4,9 +4,9 @@ import logo from '../../../public/images/logo.png';
 
 export default function Header() {
   return (
-    <Spikes>
+    <Spikes >
       <Head>
-        <ContentLogo>
+        <ContentLogo data-aos="fade-left" data-aos-duration='1000'>
           <Logo src={logo} />
         </ContentLogo>
         <Nav>
