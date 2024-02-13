@@ -17,7 +17,7 @@ export default function Card({ img, title, description, link, className }: Props
         <DescriptionCard>{description}</DescriptionCard>
       </div>
       <LinkContent>
-        <Link to={link}>→</Link>
+        <Link to={link}>¡VAMOS!➜</Link>
       </LinkContent>
     </CardContent>
   );

@@ -11,15 +11,15 @@ export default function Header() {
         </ContentLogo>
         <Nav>
           <Ul>
-            <Link to={PublicRoutes.HOME}>Inicio</Link>
+            <Link className='grow-rotate-on-hover' to={PublicRoutes.HOME}>Inicio</Link>
 
-            <Link to={PublicRoutes.JSCLEANCODE}>Codigo-Limpio</Link>
+            <Link className='grow-rotate-on-hover' to={PublicRoutes.JSCLEANCODE}>Codigo-Limpio</Link>
 
-            <Link to={PublicRoutes.DESIGNPATTERN}>Patrones de Diseño</Link>
+            <Link className='grow-rotate-on-hover' to={PublicRoutes.DESIGNPATTERN}>Patrones de Diseño</Link>
 
-            <Link to={PublicRoutes.APPIDEAS}>Apps</Link>
+            <Link className='grow-rotate-on-hover' to={PublicRoutes.APPIDEAS}>Apps</Link>
 
-            <Link to={PublicRoutes.JSINTERVIEWS}>¿?Entrevistas</Link>
+            <Link className='grow-rotate-on-hover' to={PublicRoutes.JSINTERVIEWS}>¿?Entrevistas</Link>
           </Ul>
         </Nav>
       </Head>

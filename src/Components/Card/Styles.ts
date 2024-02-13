@@ -31,21 +31,21 @@ export const DescriptionCard = styled.p`
 
 export const LinkContent = styled.div`
     display: flex;
-    justify-content: end;
 `;
 
 export const Link = styled(RouterLink)`
+    max-width: 300px;
     background-color: #828282;
     text-decoration: none;
     color: #fff;
     font-family: Sans-serif-bold;
-    font-size: 20px;
-    border-radius: 50%;
-    margin-left: 85%;
+    font-size: 15px;
+    margin-left: 65%;
+    border-radius: 5px;
     padding: 10px 15px;
-    transition: .2s all ease-in-out;
+    transition: ease-out .7s ;
+    box-shadow: inset 0 0 0 0 #1d1f21;
     &:hover{
-        background-color: #1d1f21;
-        color: #fff;
+       box-shadow: inset 300px 0 0 0 #1d1f21;
     }
 `
