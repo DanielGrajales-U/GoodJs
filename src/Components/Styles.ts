@@ -3,7 +3,7 @@ import { Link as RouterLink } from "react-router-dom";
 
 export const StylesContent = styled.div`
     max-width: 1400px;
-    margin: 10px 10px;
+    margin: 10px auto;
 `;
 
 export const HeaderSites = styled.header`

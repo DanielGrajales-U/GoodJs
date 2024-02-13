@@ -1,7 +1,7 @@
 import designPatternsData from '../../Mock/DesignPatterns/DesignPatterns';
 import CodeSnippet from '../CodeSnipets/CodeSnipets';
 import { HeaderSites, StylesContent } from '../Styles';
-import { DescriptionPattern, TitlePattern } from './Style';
+import { DescriptionPattern, ListDesignPattern, TitlePattern } from './Style';
 
 export default function DesignPatternDetails() {
   return (
@@ -9,7 +9,7 @@ export default function DesignPatternDetails() {
       <HeaderSites>
         <p>{designPatternsData.description}</p>
       </HeaderSites>
-      <ul>
+      <ListDesignPattern>
         {designPatternsData.patterns.map((pattern) => (
           <div key={pattern.id}>
             <TitlePattern>{pattern.name}</TitlePattern>
@@ -22,7 +22,7 @@ export default function DesignPatternDetails() {
             <CodeSnippet code={pattern.code2} language='javascript' key={pattern.id} />
           </div>
         ))}
-      </ul>
+      </ListDesignPattern>
     </StylesContent>
   );
 }
